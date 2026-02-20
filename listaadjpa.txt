@@ -1,0 +1,269 @@
+LISTA DE CAMPOS POR MÓDULO - ADJPA ERP DASHBOARD
+================================================================
+
+1. PAINEL GERAL (Dashboard)
+   - Total Membros
+   - Arrecadação
+   - Frequência Média
+   - Novos Visitantes
+   - Fluxo Financeiro vs Membresia (gráfico)
+   - Aniversariantes do Mês
+   - Alertas de CNH Vencendo
+   - Insights IA Eclesiástica
+   - Metas Ministeriais
+
+2. MEMBROS
+   - Nome Completo
+   - CPF
+   - RG
+   - Email
+   - Telefone
+   - WhatsApp
+   - Profissão
+   - Cargo/Função (role)
+   - Status (ACTIVE/INACTIVE)
+   - Gênero
+   - Estado Civil
+   - Data de Nascimento
+   - Data de Conversão
+   - Local de Conversão
+   - Data de Batismo
+   - Igreja do Batismo
+   - Pastor Batizador
+   - Batismo no Espírito Santo
+   - Data de Membresia
+   - Igreja de Origem
+   - Curso de Discipulado
+   - Escola Bíblica
+   - Ministério Principal
+   - Função no Ministério
+   - Outros Ministérios
+   - Cargo Eclesiástico
+   - Data de Consagração
+   - É Dizimista
+   - É Ofertante Regular
+   - Participa de Campanhas
+   - Contribuições (histórico)
+   - Endereço (CEP, Rua, Número, Complemento, Bairro, Cidade, Estado)
+   - Observações
+   - Necessidades Especiais
+   - Talentos
+   - Dons Espirituais
+   - Célula/Grupo
+   - Avatar/Foto
+
+3. FUNCIONÁRIOS
+   - Nome do Funcionário
+   - CPF
+   - RG
+   - PIS
+   - CTPS
+   - Título de Eleitor
+   - Certificado de Reservista
+   - Data do ASO
+   - Tipo Sanguíneo
+   - Contato de Emergência
+   - Cargo
+   - Função
+   - Departamento
+   - CBO (Código Brasileiro de Ocupações)
+   - Data de Admissão
+   - Data de Demissão
+   - Data de Nascimento
+   - Tipo de Contrato (CLT/PJ/VOLUNTARIO/TEMPORARIO)
+   - Jornada de Trabalho
+   - Regime de Trabalho
+   - Salário Base
+   - Tipo de Salário
+   - Sindicato
+   - Convenção Coletiva
+   - Horas Extras 50%
+   - Horas Extras 100%
+   - DSR Ativo
+   - Adicional Noturno
+   - Grau de Insalubridade
+   - Periculosidade Ativo
+   - Comissões
+   - Gratificações
+   - Prêmios
+   - ATS Percentual
+   - Auxílio Moradia
+   - Arredondamento
+   - Quantidade de Dependentes
+   - Lista de Dependentes
+   - É PCD
+   - Tipo de Deficiência
+   - Banco
+   - Código do Banco
+   - Agência
+   - Conta
+   - Tipo de Conta
+   - Titular
+   - Chave PIX
+   - Vale Transporte Ativo
+   - Valor Total Vale Transporte
+   - Vale Alimentação Ativo
+   - Valor Vale Alimentação
+   - Vale Refeição Ativo
+   - Valor Vale Refeição
+   - Plano de Saúde Ativo
+   - Valor Plano Saúde Colaborador
+   - Plano Saúde Dependentes Ativo
+   - Valor Plano Saúde Dependentes
+   - Vale Farmácia
+   - Seguro de Vida
+   - Faltas
+   - Atrasos
+   - Adiantamento
+   - Pensão Alimentícia
+   - Consignado
+   - Outros Descontos
+   - Coparticipações
+   - INSS
+   - FGTS Retido
+   - IRRF
+   - FGTS Patronal
+   - INSS Patronal
+   - RAT
+   - Terceiros
+   - Status
+   - Matrícula
+   - CNH Número
+   - CNH Categoria
+   - CNH Vencimento
+   - Endereço Completo
+   - Foto
+
+4. FINANCEIRO (ERP)
+   - Descrição do Lançamento
+   - Valor
+   - Data de Pagamento
+   - Data de Competência
+   - Tipo (INCOME/EXPENSE)
+   - Categoria
+   - Natureza da Operação
+   - Centro de Custo
+   - Projeto
+   - Conta Bancária
+   - Método de Pagamento
+   - Número da Nota Fiscal
+   - Nome do Fornecedor
+   - CPF do Fornecedor
+   - CNPJ do Fornecedor
+   - É Parcelado
+   - Número de Parcelas
+   - Status (PAID/PENDING/CANCELLED)
+   - Está Conciliado
+   - Unidade
+
+5. PATRIMÔNIO
+   - Descrição do Bem
+   - Número de Patrimônio
+   - Categoria
+   - Valor de Aquisição
+   - Valor Atual
+   - Data de Aquisição
+   - Localização
+   - Condição (NOVO/BOM/REGULAR/RUIM)
+   - Unidade
+
+6. RECURSOS HUMANOS (RH)
+   - Treinamentos Ativos
+   - Avaliações Pendentes
+   - Satisfação Interna
+   - Quadro de Talentos
+   - Cultura & Engajamento
+   - E-NPS Atual
+   - Benefícios & Vantagens
+
+7. AFASTAMENTOS
+   - Nome do Funcionário
+   - Tipo de Afastamento (VACATION/MEDICAL/MATERNITY/PATERNITY/MILITARY/WEDDING/BEREAVEMENT/UNPAID)
+   - Data de Início
+   - Data de Término
+   - CID-10
+   - Status (ACTIVE/SCHEDULED/COMPLETED)
+   - Unidade
+
+8. FOLHA DE PAGAMENTO
+   - Dados Pessoais do Funcionário
+   - Documentos
+   - Contrato de Trabalho
+   - Dados Bancários
+   - Proventos (Salário Base + Adicionais)
+   - Descontos (INSS, IRRF, Faltas, etc)
+   - Benefícios (VT, VR, VA, Plano de Saúde)
+   - Encargos Patronais
+   - Salário Líquido
+
+9. AGENDA & EVENTOS
+   - Título do Evento
+   - Descrição
+   - Data
+   - Horário
+   - Local
+   - Tipo de Evento
+   - Número de Inscritos
+
+10. RELATÓRIOS
+    - Balancete Mensal
+    - Dízimos por Membro
+    - Fluxo de Caixa Anual
+    - Previsão Orçamentária
+    - Quadro de Funcionários
+    - Encargos Patronais Totais
+    - Férias e Vencimentos
+    - Aniversariantes
+    - Crescimento de Membresia
+    - Frequência nos Cultos
+    - Batismos por Período
+    - Análise de Saúde Institucional
+
+11. COMUNICAÇÃO
+    - Modo (IA/MANUAL)
+    - Tema/Assunto
+    - Mensagem Final
+    - Histórico de Envios
+    - Base de Contatos Ativa
+
+12. CARTEIRINHAS
+    - Seleção de Membros
+    - Impressão em Lote
+    - Formato CR-80 (54mm x 86mm)
+    - QR Code
+    - Dados do Membro (Nome, Ministério, CPF, Data de Nascimento, Contato)
+
+13. CRACHÁS (DP)
+    - Seleção de Funcionários
+    - Impressão em Lote
+    - Formato CR-80 (54mm x 86mm)
+    - QR Code
+    - Dados do Funcionário (Nome, Cargo, Matrícula, Tipo Sanguíneo, Contato de Emergência)
+
+14. PORTAL DO MEMBRO
+    - Perfil do Membro
+    - Histórico de Contribuições
+    - Próximos Passos (Treinamentos)
+    - Agenda Pessoal
+    - Escalas de Ministério
+
+15. AUDITORIA & LOGS
+    - Usuário
+    - Ação Executada
+    - Entidade
+    - Data/Hora
+    - Endereço IP
+
+16. CONFIGURAÇÕES
+    - Backup e Restauração de Dados
+    - Certificado Digital A1
+    - Parâmetros Fiscais (INSS, IRRF, FGTS)
+    - Encargos Patronais
+    - Sincronização de CEP (Dev Only)
+    - Tabelas Tributárias
+
+================================================================
+TOTAL DE MÓDULOS: 16
+GERADO EM: 2024
+SISTEMA: ADJPA ERP - Enterprise Edition
+================================================================

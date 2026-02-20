@@ -1,0 +1,129 @@
+# =====================================================
+# ADJPA ERP - Configuração PostgreSQL para Rede Local
+# =====================================================
+# 
+# Copie este arquivo para o diretório de configuração do PostgreSQL:
+# Windows: C:\Program Files\PostgreSQL\14\data\postgresql.conf
+# Linux: /etc/postgresql/14/main/postgresql.conf
+# macOS: /usr/local/var/postgres/postgresql.conf
+
+# CONEXÕES E AUTENTICAÇÃO
+# =====================================================
+
+# Aceitar conexões de qualquer IP da rede local
+listen_addresses = '*'
+
+# Porta padrão
+port = 5432
+
+# Máximo de conexões simultâneas
+max_connections = 100
+
+# MEMÓRIA
+# =====================================================
+
+# Buffer compartilhado (25% da RAM)
+shared_buffers = 2GB
+
+# Memória de trabalho por operação
+work_mem = 16MB
+
+# Memória para manutenção
+maintenance_work_mem = 512MB
+
+# Cache efetivo (50-75% da RAM)
+effective_cache_size = 6GB
+
+# WRITE AHEAD LOG (WAL)
+# =====================================================
+
+# Nível de log para replicação
+wal_level = replica
+
+# Tamanho mínimo do WAL
+min_wal_size = 1GB
+
+# Tamanho máximo do WAL
+max_wal_size = 4GB
+
+# Checkpoint
+checkpoint_completion_target = 0.9
+
+# REPLICAÇÃO (opcional)
+# =====================================================
+
+# Número de processos de envio WAL
+max_wal_senders = 3
+
+# Tamanho do WAL mantido
+wal_keep_size = 64MB
+
+# LOGGING
+# =====================================================
+
+# Habilitar coletor de logs
+logging_collector = on
+
+# Diretório de logs
+log_directory = 'pg_log'
+
+# Nome do arquivo de log
+log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log'
+
+# Rotação de logs (1 dia)
+log_rotation_age = 1d
+
+# Tamanho máximo do log (100MB)
+log_rotation_size = 100MB
+
+# Prefixo da linha de log
+log_line_prefix = '%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h '
+
+# Logar queries lentas (> 1 segundo)
+log_min_duration_statement = 1000
+
+# Logar checkpoints
+log_checkpoints = on
+
+# Logar conexões
+log_connections = on
+
+# Logar desconexões
+log_disconnections = on
+
+# PERFORMANCE
+# =====================================================
+
+# Estatísticas de queries
+shared_preload_libraries = 'pg_stat_statements'
+
+# Configuração do pg_stat_statements
+pg_stat_statements.max = 10000
+pg_stat_statements.track = all
+
+# Autovacuum (limpeza automática)
+autovacuum = on
+autovacuum_max_workers = 3
+autovacuum_naptime = 1min
+
+# LOCALIZAÇÃO
+# =====================================================
+
+# Locale
+lc_messages = 'pt_BR.UTF-8'
+lc_monetary = 'pt_BR.UTF-8'
+lc_numeric = 'pt_BR.UTF-8'
+lc_time = 'pt_BR.UTF-8'
+
+# Timezone
+timezone = 'America/Sao_Paulo'
+
+# Encoding padrão
+default_text_search_config = 'pg_catalog.portuguese'
+
+# =====================================================
+# NOTAS:
+# 1. Ajuste os valores de memória conforme seu hardware
+# 2. Reinicie o PostgreSQL após alterar este arquivo
+# 3. Use pg_reload_conf() para recarregar sem reiniciar
+# =====================================================

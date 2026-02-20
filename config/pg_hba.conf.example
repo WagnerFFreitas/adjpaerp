@@ -1,0 +1,43 @@
+# =====================================================
+# ADJPA ERP - Configuração de Autenticação
+# =====================================================
+#
+# Copie este arquivo para:
+# Windows: C:\Program Files\PostgreSQL\14\data\pg_hba.conf
+# Linux: /etc/postgresql/14/main/pg_hba.conf
+# macOS: /usr/local/var/postgres/pg_hba.conf
+
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# Conexões locais
+local   all             postgres                                peer
+local   all             all                                     md5
+
+# Conexões IPv4 locais
+host    all             all             127.0.0.1/32            md5
+
+# Conexões IPv6 locais
+host    all             all             ::1/128                 md5
+
+# Rede local - Ajuste conforme sua rede
+# Exemplo: 192.168.1.0/24 para rede 192.168.1.x
+host    all             all             192.168.0.0/16          md5
+host    all             all             10.0.0.0/8              md5
+host    all             all             172.16.0.0/12           md5
+
+# Replicação (se configurar backup em outro servidor)
+host    replication     all             192.168.0.0/16          md5
+
+# =====================================================
+# MÉTODOS DE AUTENTICAÇÃO:
+# - trust: Sem senha (NÃO RECOMENDADO para produção)
+# - md5: Senha criptografada (RECOMENDADO)
+# - scram-sha-256: Mais seguro que md5 (PostgreSQL 10+)
+# - peer: Usa usuário do sistema operacional
+# =====================================================
+
+# IMPORTANTE:
+# 1. Reinicie o PostgreSQL após alterar
+# 2. Teste a conexão antes de desconectar
+# 3. Mantenha backup deste arquivo
+# =====================================================
